@@ -1,0 +1,10 @@
+#include<stdio.h>
+#define PRICE 10
+int main()
+{
+	int number = 10;
+	int totalprice;
+	totalprice = number * PRICE;
+	printf("商品总价格为：%d", totalprice);
+	return 0;
+}
