@@ -14,9 +14,8 @@ int main()
 	case 3:
 		printf("晚上好");
 		break;
-	case 4:
+	default:
 		printf("?");
-		break;
 	}
 	return 0;
 }
