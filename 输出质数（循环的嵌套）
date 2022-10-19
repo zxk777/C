@@ -1,0 +1,52 @@
+输出0-100的质数
+#include<stdio.h>
+int main()
+{
+	int i,x,count;
+	for (x = 2;x <= 100;x++)
+	{
+		count = 1;
+		for (i = 2;i < x;i++)//控制嵌套循环的变量不能为同一个
+		{
+			if (x % i == 0)
+			{
+				count = 0;
+				break;
+			}
+		}
+		if (count == 1) //!!!!!注意!!!!  判断相等用两个等号
+		{
+			printf("%d ", x);
+		}
+	}
+	return 0;
+}
+————————————————————————————————————————————————————————————————————————————————————————————————
+输入一个数字number，输出指定数量的素数
+#include<stdio.h>
+int main()
+{
+	int i,x = 2,count;
+	int cnt = 1,number;
+	scanf("%d", &number);
+	//for (x = 2;x <= 100;x++)
+	while(cnt<=number)
+	{
+		count = 1;
+		for (i = 2;i < x;i++)//控制嵌套循环的变量不能为同一个
+		{
+			if (x % i == 0)
+			{
+				count = 0;
+				break;
+			}
+		}
+		if (count == 1) //!!!!!注意!!!!  判断相等用两个等号
+		{
+			printf("%d ", x);
+			cnt++;
+		}
+		x++;
+	}
+	return 0;
+}
