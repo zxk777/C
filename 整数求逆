@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d", &x);
+	while (x > 0)
+	{
+		y = x % 10;//对一个整数做%10的操作，就得到了它的个位数
+		x /= 10;//对一个整数做/10的操作，就去掉了它的个位数
+		printf("%d", y);
+	}
+	return 0;
+}
